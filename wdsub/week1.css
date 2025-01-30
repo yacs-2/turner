@@ -1,8 +1,10 @@
 body {
   text-align: center;
+  background-color: black;
   color: green;
   font-family: Courier New, sans-serif;
   font-weight: bolder;
+  font-size: 16;
 }
 title {
   margin-top: 100px;
