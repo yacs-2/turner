@@ -2,26 +2,34 @@
 <html>
   <head>
     <style>
-      
-      a:link {
-        color:lightblue;
-      } 
-      a:visited {
-        color:lightblue;
+      a {
+        text-decoration:none;
       }
-      a:hover {
-        color:lightblue;
-      }
-      a:active {
-        color:lightblue;
-      }
-      ol {
-        text-align: center;
-        list-style-position: inside;
-      }
-      ul {
-        text-align: center;
-        list-style-position: inside;
+      .myDiv:hover {
+        text-align:center;
+        border:10px inset silver;
+        background-color:silver;
+        font-family:impact,sans-serif;
+        font-size:30px;
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:30px;
+        margin-bottom:10px;
+        bottom:0;
+        left:0;
+            }
+      .myDiv {
+        text-align:center;
+        border:10px outset silver;
+        background-color:silver;
+        font-family:impact,sans-serif;
+        font-size:30px;
+        margin-left:0px;
+        margin-right:0px;
+        margin-top:20px;
+        margin-bottom:20px;
+        bottom:0;
+        left:0;
       }
     </style>
     <title>The Bat Cave</title>
@@ -33,11 +41,11 @@
     <h3 style="text-align: center;">Here are my assignments for Mr. Stamp's awesome Web Dev class:</h3>
       <ol style="text-align:center;">
         <li>
-          <a href="wdsub/week1.html"><em>Week 1 Submission</em></a>
+          <div class="myDiv"><a href="wdsub/week1.html"><em>Week 1 Submission</em></a></div>
           <p>This page demonstrates the use of headings to create an order in which the content can be read. the content describes the basic tags for web pages.</p>
         </li>
         <li>
-          <a href="/turner/wdsub/recipe.html"><em>Week 2 Submission</em></a>
+          <div class="myDiv"><a href="/turner/wdsub/recipe.html"><em>Week 2 Submission</em></a></div>
           <p>This recipe will demonstrate how lists work, and how you can nest lists in order to find subcategories of the content you are looking for.</p>
         </li>
     </ol>
