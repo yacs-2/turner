@@ -1,1 +1,18 @@
-
+body {
+  background-color: #b0d4d5;
+  color: black;
+  text-align: left;
+  font-family: 'arsenal sc';
+  font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.heading {
+  font-family: 'anton sc', cursive;
+  text-align: center;
+  font-size: 300%;
+  text-shadow: #ff4482 2px 2px;
+}
+h2.heading {
+  font-size: 200%;
+}
