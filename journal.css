@@ -1,0 +1,100 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+}
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  overflow: auto;
+}
+#navlink {
+  text-decoration: none;
+  margin: 30px;
+}
+#title {
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  font-family: 'bungee inline';
+  background-color: darkgrey;
+  width: 100vw;
+  text-align: center;
+  border-bottom: black solid 5px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  z-index: 1000;
+  margin-top: 0px;
+}
+#art-1 {
+  position: absolute;
+  background-color: darkgrey;
+  font-family: 'dancing script';
+  width: 30vw;
+  height: 40vh;
+  top: 200%;
+  right: 35%;
+  padding: 10px;
+  border: 5px solid black;
+  overflow: auto;
+}
+#gz {
+  width: 40%;
+  float: right;
+  transform: scaleX(-1)
+}
+#art-2 {
+  font-family: 'dancing script';
+  position: absolute;
+  background-color: darkgrey;
+  width: 30vw;
+  height: 40vh;
+  top: 130%;
+  right: 35%;
+  padding: 10px;
+  border: 5px solid black;
+  overflow: scroll;
+}
+#name {
+  margin: 0px;
+  margin-bottom: 20px;
+}
+#art-3 {
+  font-family: 'dancing script';
+  position: absolute;
+  background-color: darkgrey;
+  width: 30vw;
+  height: 40vh;
+  top: 80%;
+  right: 35%;
+  padding: 10px;
+  border: 5px solid black;
+  overflow: scroll;
+}
+
+#art-4 {
+  font-family: 'dancing script';
+  position: absolute;
+  background-color: darkgrey;
+  width: 30vw;
+  height: 40vh;
+  top: 30%;
+  right: 35%;
+  padding: 10px;
+  border: 5px solid black;
+  overflow: scroll;
+}
+#footer {
+  position: relative;
+  display: block-level;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  font-family: 'bungee inline';
+  
+}
