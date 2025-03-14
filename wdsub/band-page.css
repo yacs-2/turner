@@ -1,1 +1,35 @@
+body {
+  margin: 0px;
+}
+#content, #album, #info {
+  float: left;
+}
+#content {
+  border: 2px solid blue;
+  width: 50%;
+}
+#album {
+  border: 2px solid green;
+  width: 30%;
+}
+#info {
+  border: 2px solid pink;
+  max-width: 20%;
+}
+#player audio::-webkit-media-controls-play-button {
+  display: none;
+}
+#player audio::-webkit-media-controls-panel {
+  background-color: pink;
+}
 
+#player button {
+  float: 
+}
+
+#player audio {
+  height: 1em;
+}
+#banner {
+  width: 100vw;
+}
