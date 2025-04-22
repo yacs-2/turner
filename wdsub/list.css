@@ -1,1 +1,24 @@
-
+#button-container {
+  text-align: center;
+}
+#welcome {
+  text-align: center;
+  font-family: monospace;
+}
+#bg {
+  background-image: url(https://yacs-2.github.io/turner/resource/alpha.jpg);
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+#to-do-list {
+  background-color: rgba(173, 216, 230, 0.8);
+  padding: 12px;
+  padding-left: 120px;
+}
+#to-do-list li {
+  font-size: 20px;
+}
