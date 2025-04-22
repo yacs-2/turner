@@ -8,6 +8,7 @@ function addNewItem() {
   let myList;
   let newItemText;
   let input;
+  let listBorder;
   
   //Getting input from input field for new <li>
   input = document.getElementById("new-item");
@@ -20,16 +21,21 @@ function addNewItem() {
     newItem.style.transform = "translate(0, 25px)";
     input.value = "";
 
-    myList = document.getElementById("list-grp");
+    myList = document.getElementById("to-do-list");
 
     myList.appendChild(newItem);
+    
+    listBorder = document.getElementById("list-grp");
+    listBorder.style.border = "solid black 3px";
   }
 }
 
 //This clears all <li>'s in the list-grp
 function clearList() {
-  let theList = document.getElementById("list-grp");
+  let theList = document.getElementById("to-do-list");
   theList.innerHTML = "";
+  listBorder = document.getElementById("to-do-list");
+  listBorder.style.border = "";
 }
 
 function crossOut(_icon) {
