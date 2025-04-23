@@ -1,0 +1,147 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  object-fit: cover;
+}
+
+#main-title,
+.section-title {
+  text-align: center;
+  font-family: impact, sans-serif;
+  text-shadow: 1px 2px blue;
+  font-size: 45px;
+  margin: 30px 0;
+}
+
+.submit-header {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 30px 0;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#nav-list > li {
+  flex-grow: 1;
+  width: auto;
+  padding: 10px;
+  background-color: #ddd;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  position: relative;
+  text-align: center;
+}
+
+#nav-list li:hover {
+  background-color: #a3abbc;
+  color: #d3dbec;
+}
+
+#nav-list .submenu {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #a3abbc;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+#nav-list li:hover .submenu {
+  display: block;
+}
+
+#home {
+  border-right: 2px solid black;
+}
+
+#faves {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#photos {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#web-dev {
+  border-left: 2px solid black;
+}
+
+#resource-list {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  list-style-position: outside;
+  background-color: rgba(14, 20, 56, 0.8);
+  padding: 10px;
+}
+
+#resource-list li {
+  margin-bottom: 15px;
+}
+
+#assignments-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  color: #055CE7;
+}
+
+a:hover {
+  color: #FD2431;
+}
+
+a:active {
+  color: #EA3C08;
+}
+
+.myDiv {
+  text-align: center;
+  border: 10px outset silver;
+  background-color: silver;
+  font-family: impact, sans-serif;
+  font-size: 30px;
+  margin: 30px 0;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.myDiv:hover {
+  border: 10px inset silver;
+  background-color: #ccc;
+}
