@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mr. Turner's Photo Albums</title>
-    <link rel="stylesheet" href="/turner/web-dev/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://yacs-2.github.io/turner/web-dev/index.css">
+    <script src="https://yacs-2.github.io/turner/web-dev/global-header.js"></script>
   </head>
   <body>
     <div id="gheader"></div>
-    <script src="/turner/web-dev/global-header.js"></script>
-    <h1>test test this will be a photo albums page when i get to it.</h1>
+    <div id="gheader">
+      <script src="https://yacs-2.github.io/turner/web-dev/global-header.js"></script>
+    </div>
+    
+    <div id="big-container" onclick="hideBig(this)">
+      <div>
+        <img id="big-img" src="https://antinolplus.com/cdn/shop/articles/Large_Dog_Breeds_101.webp?v=1734641085&width=1920">
+      </div>
+    </div>
+    
+    <div class="photo-row">
+      <div class="photo-container">
+        <img onclick="showBig(this)" src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/bernese-mountain-dog.jpg?" width="100%";></img>
+      <p>My Pup</p>
+      </div>
+    <div class="photo-container">
+        <img onclick="showBig(this)" src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/bernese-mountain-dog.jpg?crop=1.00xw:0.668xh;0,0.252xh&resize=640:*" width="100%" alt=" a cool monkey"></img>
+      <p>My Pup</p>
+      </div>
+     <div class="photo-container">
+        <img onclick="showBig(this)" src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/bernese-mountain-dog.jpg?crop=1.00xw:0.668xh;0,0.252xh&resize=640:*" width="100%" alt=" a cool monkey"></img>
+    <p>My Pup</p>
+      </div>
+    </div>
+    
+    <div class="photo-row">
+      <div class="photo-container">
+        <img onclick="showBig(this)" src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/bernese-mountain-dog.jpg?crop=1.00xw:0.668xh;0,0.252xh&resize=640:*" width="100%" alt=" a cool monkey"></img>
+      <p>My Pup</p>
+      </div>
+    <div class="photo-container">
+        <img onclick="showBig(this)" src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/bernese-mountain-dog.jpg?crop=1.00xw:0.668xh;0,0.252xh&resize=640:*" width="100%" alt=" a cool monkey"></img>
+      <p>My Pup</p>
+      </div>
+     <div class="photo-container">
+        <img onclick="showBig(this)" src="https://hips.hearstapps.com/ghk.h-cdn.co/assets/17/30/bernese-mountain-dog.jpg?crop=1.00xw:0.668xh;0,0.252xh&resize=640:*" width="100%" alt=" a cool monkey"></img>
+    <p>My Pup</p>
+      </div>  
+    </div>
   </body>
 </html>
