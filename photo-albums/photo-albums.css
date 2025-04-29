@@ -1,3 +1,27 @@
+#big-container {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vw;
+  padding: 10%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#big-container div {
+  width: 70%;
+  padding: 5%;
+  background-color: white;
+}
+
+#big-img{
+  max-height: 80vh;
+}
+
 .photo-row {
   display: flex;
 }
