@@ -18,3 +18,32 @@
 .photo-container img {
   max-height: 300px;
 }
+
+.photo-container p {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+#blue-lambo {
+  background-color: rgb(0, 0, 255)
+}
+
+#green-lambo {
+  background-color: rgb(0, 255, 0)
+}
+
+#neon-lambo {
+  background-color: rgb(255, 0, 0)
+}
+
+#old-lambo {
+  background-color: rgb(150, 150, 150)
+}
+
+#orange-lambo {
+  background-color: rgb(255, 85, 0)
+}
+
+#white-lambo {
+  background-color: rgb(255, 255, 255)
+}
