@@ -2,7 +2,6 @@
 <html>
    <head>
       <link rel="stylesheet" href="https://yacs-2.github.io/turner/web-dev/index.css">
-      <link rel="stylesheet" href="https://yacs-2.github.io/turner/photo-albums/photo-albums.css">
    </head>
    <body>
       <div id="gheader"></div>
@@ -10,31 +9,36 @@
          <script src="https://yacs-2.github.io/turner/web-dev/global-header.js"></script>
          <script src="https://yacs-2.github.io/turner/photo-albums/photo-albums.js"></script>
       </div>
+      <div onclick="hideBig(this)" id="big-container">
+         <div>
+            <img id="big-img" src="#" width="100%">
+         </div>
+      </div>
       <div class="photo-row">
          <div class="photo-container" id="blue-lambo">
-            <img src="https://yacs-2.github.io/turner/photo-albums/blue-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
+            <img onclick="showBig(this)" src="https://yacs-2.github.io/turner/photo-albums/blue-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
             <p>Blue Lamborghini</p>
          </div>
          <div class="photo-container" id="green-lambo">
-            <img src="https://yacs-2.github.io/turner/photo-albums/green-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
+            <img onclick="showBig(this)" src="https://yacs-2.github.io/turner/photo-albums/green-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
             <p>Green Lamborghini</p>
          </div>
          <div class="photo-container" id="neon-lambo">
-            <img src="https://yacs-2.github.io/turner/photo-albums/crimson-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
+            <img onclick="showBig(this)" src="https://yacs-2.github.io/turner/photo-albums/crimson-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
             <p>Sick Neon Lamborghini</p>
          </div>
       </div>
       <div class="photo-row">
          <div class="photo-container" id="old-lambo">
-            <img src="https://yacs-2.github.io/turner/photo-albums/old-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
+            <img onclick="showBig(this)" src="https://yacs-2.github.io/turner/photo-albums/old-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
             <p>Old Lamborghini</p>
          </div>
          <div class="photo-container" id="orange-lambo">
-            <img src="https://yacs-2.github.io/turner/photo-albums/orange-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
+            <img onclick="showBig(this)" src="https://yacs-2.github.io/turner/photo-albums/orange-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
             <p>Orange Lamborghini</p>
          </div>
          <div class="photo-container" id="white-lambo">
-            <img src="https://yacs-2.github.io/turner/photo-albums/white-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
+            <img onclick="showBig(this)" src="https://yacs-2.github.io/turner/photo-albums/white-lambo.jpeg" width="100%" alt=" a cool monkey"></img>
             <p>White Lamborghini</p>
          </div>
       </div>
