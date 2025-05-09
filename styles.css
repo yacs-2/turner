@@ -1,15 +1,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-image: url("");
+  background-image: url("/turner/resource/bg.jpeg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#main-title,
-.section-title {
+#main-title, .section-title {
   text-align: center;
   font-family: impact, sans-serif;
   text-shadow: 1px 2px blue;
