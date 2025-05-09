@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-image: url("/turner/resource/bg.jpeg");
+  background-image: url("/turner/resource/bg.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
