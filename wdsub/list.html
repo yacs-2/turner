@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-     <link rel="stylesheet" href="list.css">
-  </head>
-    <body>
+   <head>
+      <link rel="stylesheet" href="list.css">
+   </head>
+   <body>
       <script src="/turner/global-header.js"></script>
       <div id="header">
       <!-- This is the div which contains the label, input field, and button. -->
-        <div>
-          <label for="new-item">New Item:</label>
-          <input id="new-item">
-          <button onclick="addNewItem()" id="add-item">Add Item</button>
-          <button onclick="clearList()" id="clear-list">Clear List</button>
-        </div>
-      
+      <div>
+         <label for="new-item">New Item:</label>
+         <input id="new-item">
+         <button onclick="addNewItem()" id="add-item">Add Item</button>
+         <button onclick="clearList()" id="clear-list">Clear List</button>
+      </div>
       <!-- This is the list that is created with the addNewItem button, to make a list. -->
-        <div id="list-grp">
-          <ul id="to-do-list">
-          </ul>
-        </div>
-  
+      <div id="list-grp">
+         <ul id="to-do-list">
+         </ul>
+      </div>
       <script src="list.js"></script>
-    </body>
+   </body>
 </html>
