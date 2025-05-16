@@ -24,8 +24,6 @@ const barbell = document.getElementById("barbell");
 
 let reps = document.getElementById("reps");
 
-reps.value = 150;
-
 //default upgrade
 function barbellClick() {
    reps.value = Number(reps.value) + 1;
