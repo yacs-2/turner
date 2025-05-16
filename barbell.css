@@ -85,7 +85,7 @@ html {
 	left: 0;
 	flex-direction: column;
 	justify-content: space-between;
-	flex: 1;
+	height: 100%;
 }
 
 #upgrade-column-2 {
@@ -95,7 +95,7 @@ html {
 	right: 0;
 	flex-direction: column;
 	justify-content: space-between;
-	flex: 1;
+	height: 100%
 }
 
 .upgrade {
@@ -146,8 +146,6 @@ html {
 
 #pump-cover {
 	border: 1px solid black;
-	border-top: none;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/pump-cover.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -161,7 +159,6 @@ html {
 
 #wrist-straps {
 	border: 1px solid black;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/wrist-straps.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -175,7 +172,6 @@ html {
 
 #elbow-wrap {
 	border: 1px solid black;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/elbow-wrap.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -189,7 +185,6 @@ html {
 
 #smelling-salts {
 	border: 1px solid black;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/smelling-salts.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -203,7 +198,6 @@ html {
 
 #pre-workout {
 	border: 1px solid black;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/pre-workout.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -217,8 +211,6 @@ html {
 
 #protein {
 	border: 1px solid black;
-	border-top: none;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/protein.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -232,7 +224,6 @@ html {
 
 #depression {
 	border: 1px solid black;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/depression.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -246,7 +237,6 @@ html {
 
 #dad-music {
 	border: 1px solid black;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/dad-music.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -260,7 +250,6 @@ html {
 
 #tren {
 	border: 1px solid black;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/tren.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -274,7 +263,6 @@ html {
 
 #william {
 	border: 1px solid black;
-	border-bottom: none;
 	background-image: url("https://yacs-2.github.io/turner/resource/william.jpeg");
 	background-position: center;
 	background-repeat: no-repeat;
