@@ -24,6 +24,8 @@ const barbell = document.getElementById("barbell");
 
 let reps = document.getElementById("reps");
 
+reps.value = 999999999998;
+
 //default upgrade
 function barbellClick() {
    reps.value = Number(reps.value) + 1;
@@ -72,27 +74,98 @@ elbowWrap.addEventListener("click", function () {
 function smellingClick() {
    reps.value = Number(reps.value) + 10000;
 }
+smellingSalts.addEventListener("click", function () {
+   if (reps.value >= 50000) {
+      reps.value = reps.value - 50000;
+      smellingSalts.id = "sold4";
+      smellingSalts.style.pointerEvents = "none";
+      barbell.addEventListener("click", smellingClick);
+      barbell.removeEventListener("click", elbowClick);
+   }
+});
 
 function preClick() {
    reps.value = Number(reps.value) + 100000;
 }
+preWorkout.addEventListener("click", function () {
+   if (reps.value >= 100000) {
+      reps.value = reps.value - 100000;
+      preWorkout.id = "sold5";
+      preWorkout.style.pointerEvents = "none";
+      barbell.addEventListener("click", preClick);
+      barbell.removeEventListener("click", smellingClick);
+   }
+});
 
 function proteinClick() {
    reps.value = Number(reps.value) + 1000000;
 }
+protein.addEventListener("click", function () {
+   if (reps.value >= 1000000) {
+      reps.value = reps.value - 1000000;
+      protein.id = "sold6";
+      protein.style.pointerEvents = "none";
+      barbell.addEventListener("click", proteinClick);
+      barbell.removeEventListener("click", preClick);
+   }
+});
 
 function depressionClick() {
    reps.value = Number(reps.value) + 10000000;
 }
+depression.addEventListener("click", function () {
+   if (reps.value >= 5000000) {
+      reps.value = reps.value - 5000000;
+      depression.id = "sold7";
+      depression.style.pointerEvents = "none";
+      barbell.addEventListener("click", depressionClickClick);
+      barbell.removeEventListener("click", proteinClick);
+   }
+});
 
 function dadClick() {
    reps.value = Number(reps.value) + 100000000;
 }
+dadMusic.addEventListener("click", function () {
+   if (reps.value >= 10000000) {
+      reps.value = reps.value - 10000000;
+      dadMusic.id = "sold8";
+      dadMusic.style.pointerEvents = "none";
+      barbell.addEventListener("click", dadClick);
+      barbell.removeEventListener("click", depressionClick);
+   }
+});
 
 function trenClick() {
    reps.value = Number(reps.value) + 1000000000;
 }
+tren.addEventListener("click", function () {
+   if (reps.value >= 100000000) {
+      reps.value = reps.value - 100000000;
+      tren.id = "sold9";
+      tren.style.pointerEvents = "none";
+      barbell.addEventListener("click", trenClick);
+      barbell.removeEventListener("click", dadClick);
+   }
+});
 
 function williamClick() {
    reps.value = Number(reps.value) + 99999999999;
 }
+william.addEventListener("click", function () {
+   if (reps.value >= 999999999) {
+      reps.value = reps.value - 999999999;
+      william.id = "sold9";
+      william.style.pointerEvents = "none";
+      barbell.addEventListener("click", williamClick);
+      barbell.removeEventListener("click", trenClick);
+   }
+});
+
+function endGame() {
+	if (reps.value >= 999999999999) {
+		document.getElementById("the-end").style.display = "block";
+		document.getElementById("end-story").style.animation = "scrollDown 45s linear";
+	} 
+}
+setInterval(endGame, 100);
