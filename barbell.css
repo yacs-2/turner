@@ -1,279 +1,283 @@
-body,
-html {
-	margin: 0;
-	padding: 0;
+body, html {
+     margin: 0;
+     padding: 0;
+		overflow-y: auto;
 }
-
-#container {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	background-image: url("https://yacs-2.github.io/turner/resource/gym.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	overflow: hidden;
+ #container {
+     position: relative;
+     width: 100vw;
+     height: 100vh;
+     background-image: url("https://yacs-2.github.io/turner/resource/gym.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     overflow-x: hidden;
 }
-
-#motivation {
-	position: absolute;
-	width: 25%;
-	top: 4%;
-	left: 37.5%;
-	text-align: center;
-	color: grey;
+ #motivation {
+     position: absolute;
+     width: 25%;
+     top: 4%;
+     left: 37.5%;
+     text-align: center;
+     color: grey;
 }
-
-#motivation span {
-	margin: 0;
-	padding: 0;
-	font-size: xxx-large;
-	font-family: 'bowlby one sc';
-	user-select: none;
-	pointer-events: none;
+ #motivation span {
+     margin: 0;
+     padding: 0;
+     font-size: xxx-large;
+     font-family: 'bowlby one sc';
+     user-select: none;
+     pointer-events: none;
 }
-
-#arrow {
-	position: absolute;
-	top: 16%;
-	left: 46.25%;
-	width: 7.5%;
-	height: 15%;
-	background-image: url("https://yacs-2.github.io/turner/resource/down-arrow.png");
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
+ #arrow {
+     position: absolute;
+     top: 16%;
+     left: 46.25%;
+     width: 7.5%;
+     height: 15%;
+     background-image: url("https://yacs-2.github.io/turner/resource/down-arrow.png");
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#barbell {
-	position: absolute;
-	top: 25.25%;
-	left: 37.5%;
-	width: 25%;
-	height: 15%;
-	cursor: pointer;
-	background-image: url("https://yacs-2.github.io/turner/resource/barbell.png");
-	background-size: contain;
-	background-position: center;
-	background-repeat: no-repeat;
-	transition: transform 0.15s ease-out;
+ #barbell {
+     position: absolute;
+     top: 25.25%;
+     left: 37.5%;
+     width: 25%;
+     height: 15%;
+     cursor: pointer;
+     background-image: url("https://yacs-2.github.io/turner/resource/barbell.png");
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
+     transition: transform 0.15s ease-out;
 }
-
-#barbell:active {
-	transform: scale(1.1);
+ #barbell:active {
+     transform: scale(1.1);
 }
-
-#reps {
-	position: absolute;
-	pointer-events: none;
-	user-select: none;
-	top: 45%;
-	left: 37.5%;
-	width: 25%;
-	height: 7.5%;
-	background-color: black;
-	color: white;
-	text-align: center;
-	font-family: 'bowlby one sc';
-	font-size: 125%;
+ #reps {
+     position: absolute;
+     pointer-events: none;
+     user-select: none;
+     top: 45%;
+     left: 37.5%;
+     width: 25%;
+     height: 7.5%;
+     background-color: black;
+     color: white;
+	 	 text-align: center;
+     font-family: 'bowlby one sc';
+	   font-size: 125%;
 }
-
-#upgrade-column-1 {
-	display: flex;
-	position: absolute;
-	top: 0;
-	left: 0;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100%;
+ #upgrade-column-1 {
+     display: flex;
+     position: absolute;
+     top: 0;
+     left: 0;
+     flex-direction: column;
+     justify-content: space-between;
+	   height: 100%;
 }
-
-#upgrade-column-2 {
-	display: flex;
-	position: absolute;
-	top: 0;
-	right: 0;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 100%
+ #upgrade-column-2 {
+     display: flex;
+     position: absolute;
+     top: 0;
+     right: 0;
+     flex-direction: column;
+     justify-content: space-between;
+	   height: 100%;
 }
-
-.upgrade {
-	cursor: pointer;
+ .upgrade {
+     cursor: pointer;
 }
-
-.upg-row-left {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	flex: 1;
+ .upg-row-left {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     flex: 1;
 }
-
-.upg-row-right {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-	flex: 1;
+ .upg-row-right {
+     display: flex;
+     flex-direction: row-reverse;
+     align-items: center;
+     flex: 1;
 }
-
-.descrip-price-left {
-	text-align: center;
-	font-size: 90%;
-	font-family: 'bowlby one sc';
-	border: 1px solid black;
-	border-left: none;
-	padding: 3px;
-	background-color: black;
-	color: white;
+ .descrip-price-left {
+     text-align: center;
+     font-size: 90%;
+     font-family: 'bowlby one sc';
+     border: 1px solid black;
+     border-left: none;
+     padding: 3px;
+     background-color: black;
+     color: white;
 }
-
-.descrip-price-right {
-	text-align: center;
-	font-size: 90%;
-	font-family: 'bowlby one sc';
-	border: 1px solid black;
-	border-right: none;
-	padding: 3px;
-	background-color: black;
-	color: white;
+ .descrip-price-right {
+     text-align: center;
+     font-size: 90%;
+     font-family: 'bowlby one sc';
+     border: 1px solid black;
+     border-right: none;
+     padding: 3px;
+     background-color: black;
+     color: white;
 }
-
-.upgrade {
-	width: 100px;
-	height: 100px;
-	background-size: cover;
+ .upgrade {
+     width: 100px;
+     height: 100px;
+	   background-size: cover;
 }
-
-#pump-cover {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/pump-cover.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #pump-cover {
+     border: 1px solid black;
+     border-top: none;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/pump-cover.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold1 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold1 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#wrist-straps {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/wrist-straps.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #wrist-straps {
+     border: 1px solid black;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/wrist-straps.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold2 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold2 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#elbow-wrap {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/elbow-wrap.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #elbow-wrap {
+     border: 1px solid black;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/elbow-wrap.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold3 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold3 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#smelling-salts {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/smelling-salts.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #smelling-salts {
+     border: 1px solid black;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/smelling-salts.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold4 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold4 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#pre-workout {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/pre-workout.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #pre-workout {
+     border: 1px solid black;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/pre-workout.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold5 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold5 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#protein {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/protein.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #protein {
+     border: 1px solid black;
+     border-top: none;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/protein.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold6 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold6 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#depression {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/depression.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #depression {
+     border: 1px solid black;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/depression.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold7 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold7 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#dad-music {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/dad-music.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #dad-music {
+     border: 1px solid black;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/dad-music.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold8 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold8 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#tren {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/tren.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #tren {
+     border: 1px solid black;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/tren.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold9 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold9 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#william {
-	border: 1px solid black;
-	background-image: url("https://yacs-2.github.io/turner/resource/william.jpeg");
-	background-position: center;
-	background-repeat: no-repeat;
+ #william {
+     border: 1px solid black;
+     border-bottom: none;
+     background-image: url("https://yacs-2.github.io/turner/resource/william.jpeg");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
-#sold10 {
-	background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
-	background-position: center;
-	background-repeat: no-repeat;
+ #sold10 {
+     background-image: url("https://yacs-2.github.io/turner/resource/sold.png");
+     background-position: center;
+     background-repeat: no-repeat;
 }
-
 * {
 	user-select: none;
+}
+#the-end {
+	position: fixed;
+	top: 0;
+	left: 0;
+  display: none;
+	width: 100vw;
+	min-height: 100vh;
+	background-color: black;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+}
+#end-story {
+	position: absolute;
+	font-family: monospace;
+	top: 100%;
+	width: 40%;
+	left: 30%;
+	animation-fill-mode: forwards;
+}
+@keyframes scrollDown {
+	0% {
+		top: 100%;
+	}
+	100% {
+		top: 0%;
+	}
 }
