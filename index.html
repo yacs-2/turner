@@ -21,5 +21,13 @@
       </a>
       </div>
       </div>
+      <script>
+         let urlParams = new URLSearchParams(window.location.search);
+         if (urlParams.has("variable1")) {
+            let username = urlParams.get("variable1");
+            let userspan = document.getElementById("userspan");
+            userspan.innerText = ", " + username + ",";
+         }
+      </script>
    </body>
 </html>
