@@ -78,7 +78,7 @@ html {
 }
 
 #enter:active {
-	transform: translateY(6px);
+	transform: translateY(-6px);
 	box-shadow: none;
 }
 
