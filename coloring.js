@@ -87,14 +87,14 @@ addEventListener("keydown", function (event) {
       cycleThrough();
    }
    if (event.key === "ArrowUp") {
-      currentIndex -= 25;
+      currentIndex -= 50;
       if (currentIndex < 0) {
          currentIndex = boxes.length - 1;
       }
       cycleThrough();
    }
    if (event.key === "ArrowDown") {
-      currentIndex += 25;
+      currentIndex += 50;
       if (currentIndex >= boxes.length) {
          currentIndex = 20;
       }
